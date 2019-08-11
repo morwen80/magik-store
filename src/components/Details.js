@@ -9,29 +9,26 @@ class Details extends Component {
         {value => {
           const {id, company, img, info, price, title, inCart} = value.detailProduct;
           return (
-            <div className="container">
-              <div className="row">
-                <div className="col-10 mx-auto text-center text-slanted text-blue my-5">
-                  <h1>{title}</h1>
-                </div>
-              </div>
+            <div className="container productDetails">
 
               <div className="row">
-                <div className="col-10 mx-auto col-md-4 my-1">
-                  <img src={img} className="img-fluid" alt="product" />
+                <div className="col-10 mx-auto col-md-5 my-1 ">
+                  <img src={img} className="img-fluid align-middle" alt="product" />
                 </div>
-                <div className="col-10 mx-auto col-md-8 my-3">
-                  <h4 className="text-title text-muted mt-3 mb-2">
-                    made by: <span className="text-capitalize">{company}</span>
-                  </h4>
-                  <h4 className="text-blue"><strong>price: <span>⍎</span>{price}</strong></h4>
+
+                <div className="col-10 mx-auto col-md-7 my-3 align-middle">
+                  <h4 className="text-title text-lg-left mt-3 mb-2">{title}</h4>
+
+                  <h5 className="text-lg-left mt-3 mb-2">{company}</h5>
+                  <hr />
+                  <h5 className="text-blue"><strong>⍎ {price}</strong></h5>
                   <p className="text-muted lead">{info}</p>
 
 
                   <div>
-                    <Link to='/'><button>Back to Shopping</button></Link>
+                    <Link to='/'><button className="btn btn-secondary">Back to Shopping</button></Link>
 
-                    <button disable={inCart ? 'true' : "false"}
+                    <button class="btn btn-info" disable={inCart ? 'true' : "false"}
                     onClick={() => {
                       value.addToCart(id);
                       value.openModal(id);

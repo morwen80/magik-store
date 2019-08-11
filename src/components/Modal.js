@@ -17,10 +17,10 @@ class Modal extends Component {
               <div className="modalBody">
                 <h5>Item added to the cart</h5>
                 <img src={img} className="img-fluid" alt="product" />
-                <h5>{title}</h5>
-                <h5 className="text-muted">price: ⍎ {price}</h5>
-                <Link to="/"><button onClick={closeModal}>Continue Shopping</button></Link>
-                <Link to="/cart"><button onClick={closeModal}>Go to Cart</button></Link>
+                <h5 className="mb-1">{title}</h5>
+                <h5 className="text-muted mb-1">price: ⍎ {price}</h5>
+                <Link to="/"><button onClick={closeModal} className="btn btn-secondary">Continue Shopping</button></Link>
+                <Link to="/cart"><button onClick={closeModal} class="btn btn-dark">Go to Cart</button></Link>
               </div>
             </div>
           }

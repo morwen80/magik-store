@@ -4,9 +4,6 @@ import Product from './Product';
 import {ProductConsumer} from '../context';
 
 class ProductList extends Component {
-  // state = {
-  //   products: storeProducts
-  // };
 
   render() {
     return (

@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
-import {ProductConsumer} from '../context';
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { ProductConsumer } from '../context';
 
 class Product extends Component {
   render() {

@@ -151,8 +151,6 @@ getItem = id => {
     }
   })
 }
-
-
   render() {
     return (
       <ProductContext.Provider
@@ -166,7 +164,6 @@ getItem = id => {
         decrement: this.decrement,
         removeItem: this.removeItem,
         clearCart: this.clearCart
-
       }}
       >
         {this.props.children}
