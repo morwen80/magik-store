@@ -13,15 +13,15 @@ class Details extends Component {
 
               <div className="row">
                 <div className="col-10 mx-auto col-md-5 my-1 ">
-                  <img src={img} className="img-fluid align-middle" alt="product" />
+                  <img src={img} className="img-fluid" alt="product" />
                 </div>
 
-                <div className="col-10 mx-auto col-md-7 my-3 align-middle">
+                <div className="col-10 mx-auto col-md-7 my-3">
                   <h4 className="text-title text-lg-left mt-3 mb-2">{title}</h4>
 
                   <h5 className="text-lg-left mt-3 mb-2">{company}</h5>
                   <hr />
-                  <h5 className="text-blue"><strong>⍎ {price}</strong></h5>
+                  <h5><strong>⍎ {price}</strong></h5>
                   <p className="text-muted lead">{info}</p>
 
 

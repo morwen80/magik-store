@@ -15,7 +15,7 @@ class Cart extends Component {
             if(cart.length > 0) {
               return (
                 <React.Fragment>
-                  <h3 className="cartTitle">Your Cart</h3>
+                  <h3 className="text-title cartTitle">Your Cart</h3>
                   <CartColumns/>
                   <CartList value={value}/>
                   <CartTotals value={value} />

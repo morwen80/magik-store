@@ -5,28 +5,27 @@ export default function CartTotals({value}){
   const {cartSubtotal, cartTax, cartTotal, clearCart} = value
   return (
     <React.Fragment>
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
-          <div className="col-10 mt-2 ml-sm-5 ml-md-auto col-sm-8 text-right">
+          <div className="col-10 mt-2 ml-sm-1 ml-md-auto col-sm-8 text-right">
             <Link to="/">
-              <button className="btn btn-outline-danger text-uppercase mb-3 px-5"
+              <button
+              className="btn btn-dark text-uppercase mb-3 px-3"
               type="button" onClick={ () => {clearCart()}}>clear cart</button>
             </Link>
-            <h5>
-              <span className="cart-subs">subtotal: </span>
-              <strong>⍎ {cartSubtotal}</strong>
-            </h5>
+            <div className="subs">
+              <h5>
+                <span>subtotal: </span> ⍎ {cartSubtotal}
+              </h5>
 
-            <h5>
-              <span className="cart-subs">tax: </span>
-              <strong>⍎ {cartTax}</strong>
-            </h5>
+              <h5>
+                <span>tax: </span> ⍎ {cartTax}
+              </h5>
 
-            <h5>
-              <span className="cart-subs">
-              total: </span>
-              <strong>⍎ {cartTotal}</strong>
-            </h5>
+              <h5>
+                <span>total: </span>⍎ {cartTotal}
+              </h5>
+            </div>
           </div>
         </div>
       </div>

@@ -4,10 +4,7 @@ class EmptyCart extends Component {
   render() {
     return (
       <div className="container emptyCart">
-        <div className="row">
-          No items in your cart
-          
-        </div>
+          <h3 className="text-title">No items in your cart</h3>
       </div>
     )
   }
