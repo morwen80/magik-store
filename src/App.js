@@ -6,7 +6,7 @@ import Navbar from './components/Navbar'
 import ProductList from './components/ProductList'
 import Cart from './components/Cart/Index'
 import Details from './components/Details';
-import Default from './components/Default';
+import PageNotFound from './components/PageNotFound';
 import Modal from './components/Modal';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Route path='/' component={ProductList} exact />
         <Route path='/details' component={Details} />
         <Route path='/cart' component={Cart} />
-        <Route component={Default} />
+        <Route component={PageNotFound} />
       </Switch>
       <Modal />
     </React.Fragment>
